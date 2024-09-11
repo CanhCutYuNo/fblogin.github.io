@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+.content {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 70px;
+    line-height: 30px;
+}
+
+.facebook-logo {
+    font-size: 50px;
+    color: #1877F2;
+    font-weight: bold;
+}
+
+.facebook-desc {
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+    line-height: normal;
+    letter-spacing: 0px;
+    line-height: 5px;
+}
+
+.form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+.form button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.form button:hover {
+    background-color:  #0056b3;;
+}
+.line {
+    width: 107%;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(197, 186, 186, 0.74);
+}
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.button1 {
+    margin-top: 20px;
+}
+
+.button1 button {
+    background-color: #28a728;
+    width: 60%;
+    height: 50px;
+    font-weight: bold;
+}
+
+.button1 button:hover {
+    background-color: #218838;  
+}
