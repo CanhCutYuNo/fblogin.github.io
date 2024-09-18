@@ -13,40 +13,43 @@ body {
 }
 
 .content {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 70px;
-    line-height: 30px;
+    display: block;
+    text-align: left;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .facebook-logo {
-    font-size: 50px;
-    color: #1877F2;
+    font-size: 4em;
+    color: #226dcf;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .facebook-desc {
-    font-size: 24px;
-    color: #000;
+    font-size: 2em;
     margin-top: 10px;
-    line-height: 5px;
 }
 
 .form {
     background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 396px;
+    height: 350px;
+    margin: 0 auto;
 }
 .form input[type="text"],
 .form input[type="password"] {
-    width: 100%;
+    width: 95%;
+    height: 50px;
     padding: 10px;
-    margin: 5px 0;
+    margin: 0 auto;
+    margin-top: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 .form input:focus {
@@ -55,31 +58,35 @@ body {
     outline: none;
 }
 .form button {
-    width: 100%;
+    width: 95%;
+    height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
+    border-radius: 10px;
+    background-color: #0866ff;
     color: white;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
 }
 .form button:hover {
-    background-color:  #0056b3;;
+    background-color:  #0056b3;
 }
 .line {
-    width: 107%;
+    width: 95%;
     height: 1px;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgba(197, 186, 186, 0.74);
 }
 .forgot-password {
     display: block;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
     font-size: 14px;
     color: #007bff;
     text-decoration: none;
@@ -103,3 +110,103 @@ body {
 .button1 button:hover {
     background-color: #218838;  
 }
+
+@media (min-width: 1000px) {
+    .language {
+      display: none;
+    }
+
+    .fb-logo {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 1000px) {
+    body, html {
+        height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    
+    .main {
+        margin-right: 20px;
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .fb-logo {
+        width: 115px;
+        margin: 1em;
+        margin-top: 120px;
+    }
+
+    .language {
+        display: flex;
+        font-size: 0.6em;
+        margin: 15px 0px;
+        position: absolute;
+        top: 0;
+    }  
+    
+    .content {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        background-color: #F1F4F8;
+        border-radius: 0px;
+        box-shadow: none;
+        margin-bottom: 220px;
+        margin-top: 95px;
+    }
+
+    .form input[type="text"],
+    .form input[type="password"] {
+        height: 65px;
+        width: 95%;
+    }
+
+    .form button {
+        height: 45px;
+        border-radius: 25px;
+        font-weight: lighter;
+    }
+
+    .button1 button{
+        margin-top: 188px;
+        width: 95%;
+        height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #F1F4F8;
+        color: #0867ffcc;
+        border: 1px solid #0867ffce;
+    }
+
+    .footer {
+        flex-direction: column;
+        display: block;
+        text-align: center;
+    }
+
+    .meta {
+        margin: 15px;
+    }
+    
+ }
